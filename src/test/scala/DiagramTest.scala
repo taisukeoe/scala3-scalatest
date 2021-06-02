@@ -3,7 +3,7 @@ import org.scalatest.diagrams.Diagrams
 import scala.util._
 
 class DiagramTest extends AnyFunSuite with Diagrams{
-  test("This must be success"){
-    assert(Seq("a").nonEmpty)
+  test("This must not be success"){
+    assert(Seq("a", "b") == Seq("a"))
   }
 }
